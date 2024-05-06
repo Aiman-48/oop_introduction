@@ -9,7 +9,7 @@ class Personality {
         this.type = type;
     }
 
-    identifyPersonality() {
+    getPersonality() {
         if (this.type === "1") {
             console.log("You are an extravert.");
             this.askName();
@@ -47,13 +47,13 @@ async function main() {
 
     const answers = await inquirer.prompt({
         type: 'input',
-        name: 'type',
+        name: 'name',
         message: 'Enter your choice:',
     });
 
     const name = "";
-    const personality = new Personality(name, answers.type);
-    personality.identifyPersonality();
+    const personality = new Personality(name, answers.name);
+    personality.getPersonality();
 }
 
 main();
