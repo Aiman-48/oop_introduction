@@ -1,9 +1,10 @@
 {
-  "name": "oop_introduction",
+  "name": "aim_48_oop_introduction",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
+  "bin": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
